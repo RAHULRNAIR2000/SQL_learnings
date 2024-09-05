@@ -56,3 +56,33 @@ BETWEEN	 Between a certain range
 LIKE	 Search for a pattern	
 
 IN	  To specify multiple possible values for a column	
+
+<h2>The MySQL AND, OR and NOT Operators </h2>
+
+AND Example
+
+SELECT * FROM Customers
+WHERE Country = 'Germany' AND City = 'Berlin';
+
+OR Example
+
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR City = 'Stuttgart';
+
+NOT Example
+
+SELECT * FROM Customers
+WHERE NOT Country = 'Germany';
+
+<h2>The MySQL ORDER BY Keyword</h2>
+
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+SELECT * FROM Customers
+ORDER BY Country;
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
